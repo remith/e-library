@@ -1,0 +1,29 @@
+{
+  "name": "loginapp",
+  "version": "1.0.0",
+  "description": "e-library authentication system",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Remith Ravindran",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mongoose-unique-validator":"*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+ <!--h2 class="page-header">Dashboard</h2>
+<p>{{user.name}}, Welcome to your</p-->  
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>e-Library-admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+       <section class="bg-primary" id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  col-md-12 text-center">
+                    <h2 class="margin-top-0 text-primary">Services</h2>
+                    <br>
+                    <p class="text-faded">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 text-center">
+                                    <div class="feature">
+                                        <i class="icon-lg ion-ios-personadd wow fadeIn" data-wow-delay=".4s"></i>
+                                        <h3>Add User</h3>
+                                        <p class="text-muted"> Add a new User</p>
+                                        <!--a href="#two" class="btn btn-default btn-xl page-scroll">Add</a-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 text-center">
+                                    <div class="feature">
+                                        <i class="icon-lg ion-ios-person wow fadeInUp" data-wow-delay=".3s"></i>
+                                        <h3>Delete User</h3>
+                                        <p class="text-muted">Delete Existing user</p>
+                                        <!--a href="#two" class="btn btn-default btn-xl page-scroll">Delete</a-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 text-center">
+                                    <div class="feature">
+                                        <i class="icon-lg ion-plus-round wow fadeIn" data-wow-delay=".4s"></i>
+                                        <h3>Add Books</h3>
+                                        <p class="text-muted">Add New Book</p>
+                                        <!--a href="#two" class="btn btn-default btn-xl page-scroll">Add New</a-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  col-md-12 text-center">
+                    <br>
+                    <p class="text-faded">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 text-center">
+                                    <div class="feature">
+                                        <i class="icon-lg ion-checkmark-round wow fadeIn" data-wow-delay=".5s"></i>
+                                        <h3>Issue Book</h3>
+                                        <p class="text-muted">Issue Books to user</p>
+                                        <!--a href="#two" class="btn btn-default btn-xl page-scroll">Add</a-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 text-center">
+                                    <div class="feature">
+                                        <i class="icon-lg ion-minus-round wow fadeIn" data-wow-delay=".4s"></i>
+                                        <h3>Return Book</h3>
+                                        <p class="text-muted">Return a Book</p>
+                                        <!--a href="#two" class="btn btn-default btn-xl page-scroll">Delete Existing</a-->
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 text-center">
+                                    <div class="feature">
+                                        <i class="icon-lg ion-ios-calculator wow fadeIn" data-wow-delay=".5s"></i>
+                                        <h3>Calculate Fine</h3>
+                                        <p class="text-muted">Calculate fine for Specific user</p>
+                                        <!--a href="#two" class="btn btn-default btn-xl page-scroll">Add</a-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <section class="bg-primary" id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  col-md-12 text-center">
+                    <h2 class="margin-top-0 text-primary">Manage User</h2>
+                    <br>
+                    <div class="col-lg-6 col-md-6 text-center">
+                        <div class="feature">
+                            <i class="icon-lg ion-ios-personadd wow fadeIn" data-wow-delay=".4s"></i>
+                            <h3>Add User</h3>
+                            <br>
+
+                            <form id="user-form" action="#" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="text" name="Name" id="name" tabindex="1" class="form-control" placeholder="Name" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sel1">User Type</label>
+                                    <select class="form-control" id="sel1" style="border:1px solid #fff">
+                                        <option>Student</option>
+                                        <option>Admin</option>
+                                    </select>
+                                    <br>
+                                    <div class="col-lg-6 col-md-6 text-center">
+                                        <input type="submit" name="user-add" id="user-add" tabindex="4" class="form-control btn btn-register" value="Add" style="border:1px solid #fff">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 text-center">
+                                        <input type="reset" tabindex="4" class="form-control btn btn-register" value="Reset" style="border:1px solid #fff">
+                                    </div>
+
+                                </div>
+                            </form>
+                            <!--a href="#two" class="btn btn-default btn-xl page-scroll">Delete Existing</a-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <div class="feature">
+                                <i class="icon-lg ion-ios-person wow fadeIn" data-wow-delay=".4s"></i>
+                                <h3>Delete User</h3>
+                                <br>
+                                <br>
+                                <form id="register-form" action="#" method="post" role="form">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Enter User Id" value="" style="border:1px solid #fff">
+                                        <br>
+                                        <div class="col-lg-6 col-md-6 text-center">
+                                            <input type="submit" name="user-delete" id="user-delete" tabindex="4" class="form-control btn btn-register" value="Delete" style="border:1px solid #fff">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 text-center">
+                                            <input type="reset" tabindex="4" class="form-control btn btn-register" value="Reset" style="border:1px solid #fff">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+
+                                    <h3>Update User</h3>
+                                    <br>
+                                    <br>
+                                    <div class="form-group">
+                                        <input type="text" name="userid" id="userid" tabindex="1" class="form-control" placeholder="Enter User Id" value="" style="border:1px solid #fff">
+                                        <br>
+                                        <div class="col-lg-6 col-md-6 text-center">
+                                            <input type="submit" name="user-delete" id="user-delete" tabindex="4" class="form-control btn btn-register" value="Update" style="border:1px solid #fff">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 text-center">
+                                            <input type="reset" tabindex="4" class="form-control btn btn-register" value="Reset" style="border:1px solid #fff">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <section class="bg-primary" id="three">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  col-md-12 text-center">
+                    <h2 class="margin-top-0 text-primary">Manage Books</h2>
+                    <br>
+                    <div class="col-lg-6 col-md-6 text-center">
+                        <div class="feature">
+                            <i class="icon-lg ion-ios-personadd wow fadeIn" data-wow-delay=".4s"></i>
+                            <h3>Add Book</h3>
+                            <br>
+                            <form id="book-form" action="users/admin" method="post" role="form">
+                                <div class="form-group">
+                                    <input type="number" name="bno" id="bno" tabindex="1" class="form-control" placeholder="Book Ref. No" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="bname" id="bname" tabindex="1" class="form-control" placeholder="Book Name" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="bauth" id="bauth" tabindex="1" class="form-control" placeholder="Author" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="bcopies" id="bcopies" tabindex="1" class="form-control" placeholder="Copies" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="bpubl" id="bpubl" tabindex="1" class="form-control" placeholder="Publisher" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="bpub_year" id="bpub_year" tabindex="1" class="form-control" placeholder="Publication Year" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="brno" id="brno" tabindex="1" class="form-control" placeholder="Rack Number" value="" style="border:1px solid #fff">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="badded" id="badded" tabindex="1" class="form-control" placeholder="Added By" value="" style="border:1px solid #fff">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sel1">Category</label>
+                                    <select class="form-control" id="sel1" style="border:1px solid #fff">
+                                        <option>IT</option>
+                                        <option>Management</option>
+                                        <option>Other</option>
+                                    </select>
+                                    <br>
+                                    <div class="col-lg-6 col-md-6 text-center">
+                                        <input type="submit" name="user-add" id="user-add" tabindex="4" class="form-control btn btn-register" value="Add" style="border:1px solid #fff">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 text-center">
+                                        <input type="reset" tabindex="4" class="form-control btn btn-register" value="Reset" style="border:1px solid #fff">
+                                    </div>
+
+                                </div>
+                            </form>
+                            <!--a href="#two" class="btn btn-default btn-xl page-scroll">Delete Existing</a-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <div class="feature">
+                                <i class="icon-lg ion-ios-person wow fadeIn" data-wow-delay=".4s"></i>
+                                <h3>Return Book</h3>
+				<br><br>				
+                                <form id="register-form" action="#" method="post" role="form">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Enter Book Issue Id" value="" style="border:1px solid #fff">
+                                        <br>
+                                        <div class="col-lg-6 col-md-6 text-center">
+                                            <input type="submit" name="user-delete" id="user-delete" tabindex="4" class="form-control btn btn-register" value="Return" style="border:1px solid #fff">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 text-center">
+                                            <input type="reset" tabindex="4" class="form-control btn btn-register" value="Reset" style="border:1px solid #fff">
+                                        </div>
+                                    </div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <i class="icon-lg ion-checkmark-round wow fadeIn" data-wow-delay=".4s"></i>
+                                      <h3>Issue Book</h3>
+                                <form id="issue-form" action="#" method="post" role="form">
+                                    <div class="form-group">
+                                        <input type="text" name="uid" id="uid" tabindex="1" class="form-control" placeholder="Enter User Id" value="" style="border:1px solid #fff"></div>
+                                    <div class="form-group">
+                                        <input type="text" name="bid" id="bid" tabindex="4" class="form-control" placeholder="Enter Book Ref. No" style="border:1px solid #fff"></div>
+                                    <!--div class="form-group">
+                                        <input type="date" name="is_date" id="is_date" tabindex="4" class="form-control" placeholder="Date" style="border:1px solid #fff"></div-->
+<div class="form-group ">
+
+       <div class="input-group">
+        <div class="input-group-addon">
+         <i class="icon-sm ion-calendar">
+         </i>
+        </div>
+        <input class="form-control" id="date" name="date" placeholder="DATE MM/DD/YYYY" type="text" tabindex="4"style="border:1px solid #fff"/>
+       </div>
+     </div>
+
+                                        <div class="col-lg-6 col-md-6 text-center">
+                                            <input type="submit" name="book-issue" id="book-issue" tabindex="4" class="form-control btn btn-register" value="Issue" style="border:1px solid #fff">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 text-center">
+                                            <input type="reset" tabindex="4" class="form-control btn btn-register" value="Reset" style="border:1px solid #fff">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <div class="feature">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <section class="bg-primary" id="last">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Calculate Fine</h2>
+                    <br>
+                    <br>
+                    <br>
+
+                    <form id="calc-fine" action="#" method="post" role="form">
+                        <div class="form-group">
+                            <input type="text" name="uid" id="uid" tabindex="1" class="form-control" placeholder="Enter User Id" value="" style="border:1px solid #fff">
+                            <br>
+                            <input type="text" name="bid" id="bid" tabindex="4" class="form-control" placeholder="Enter Book Id" style="border:1px solid #fff">
+                            <br>
+                            <div class="col-lg-6 col-md-6 text-center">
+                                <input type="submit" name="user-delete" id="user-delete" tabindex="4" class="form-control btn btn-register" value="Calculate" style="border:1px solid #fff">
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-center">
+                                <input type="reset" tabindex="4" class="form-control btn btn-register" value="Reset" style="border:1px solid #fff">
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer id="footer">
+        <span class="pull-right text-muted small"><a>e-Library</a> ©2016 Remith</span>
+    </footer>
+    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="text-center">Nice Job!</h2>
+                    <p class="text-center">Thank you for submitting your feedback.</p>
+                    <br/>
+                    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

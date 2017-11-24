@@ -1,0 +1,19 @@
+# Node.js Loginapp
+This is a user login and registration app using Node.js, Express, Passport and Mongoose. Using MongoDb as database.
+
+### Version
+1.1.0
+
+### Installation
+Loginapp requires [Node.js](https://nodejs.org/) v4+ to run.
+
+### Module installation
+$ npm install
+
+
+### Run the application
+$ node app
+
+
+Modify routes folder to login based on roles
+admin.js
