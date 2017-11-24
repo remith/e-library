@@ -1,5 +1,5 @@
 # Node.js Loginapp
-This is a user login and registration app using Node.js, Express, Passport and Mongoose. Using MongoDb as database.
+This is an e library web application made using Node.js, Express, Passport and Mongoose. Using MongoDb as database.
 
 ### Version
 1.1.0
